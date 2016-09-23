@@ -1,0 +1,17 @@
+elasticsearch:
+  image: elasticsearch:1.7.5
+  command: elasticsearch -Des.network.host=0.0.0.0
+  ports:
+    - "9200:9200"
+    - "9300:9300"
+
+notification:
+  build: .
+  dockerfile: go_server.dockerfile
+  command: gin
+  volumes:
+    - ./goapp:/go/src/app
+  ports:
+    - "3000:3001"
+  links:
+    - elasticsearch

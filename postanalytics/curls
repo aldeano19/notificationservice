@@ -1,0 +1,37 @@
+curl -i -X POST \
+-H "Application-Key: 6bebe7eba601b1fdc47e5995e3b9a181" \
+-H "Application-Rest-Key: de69a1afc278db90f8c101817099dd36" \
+-d "version=3.15" \
+-d "accountId=2547109" \
+-d "deviceId=RUN#" \
+-d "device=SuiteName" \
+-d "deviceType=TestCaseName" \
+-d "tag=Step" \
+-d "customValue=1" \
+-d "customMessage=success or fail message" \
+-d "clientTime=123800" \
+https://dev-test.sirqul.com/api/3.15/analytics/usage
+
+
+
+curl -i -X POST \
+-H "Application-Key: 6bebe7eba601b1fdc47e5995e3b9a181" \
+-H "Application-Rest-Key: de69a1afc278db90f8c101817099dd36" \
+-d "version=3.15" \
+-d "accountId=2547109" \
+-d "deviceId=RUN#" \
+https://dev-test.sirqul.com/api/3.15/analytics/filteredUsage
+
+
+
+
+curl -i -X POST \
+-H "Application-Key: 6bebe7eba601b1fdc47e5995e3b9a181" \
+-H "Application-Rest-Key: de69a1afc278db90f8c101817099dd36" \
+-d "version=3.15" \
+-d "accountId=2547109" \
+-d "deviceId=RUN#" \
+-d "device=SuiteName" \
+-d "deviceType=TestCaseName" \
+-d "tag=Step" \
+https://dev-test.sirqul.com/api/3.15/analytics/filteredUsage
