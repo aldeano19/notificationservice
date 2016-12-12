@@ -1,3 +1,10 @@
+RUN with Docker (linux)
+============
+* cd into this repo's local version
+$ sudo docker-compose build
+$ sudo docker-compose up
+
+
 REQUIREMENTS for production(without docker):
 ============
 install java:
