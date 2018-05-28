@@ -1,3 +1,14 @@
+# Notification Service
+
+## Overview
+A notification service to send email and text messages
+
+## Technologies used
+* Golang
+* Docker
+* Elasticsearch
+
+
 RUN with Docker (linux)
 ============
 * cd into this repo's local version
